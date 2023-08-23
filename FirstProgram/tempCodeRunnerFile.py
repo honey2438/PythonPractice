@@ -1,1 +1,0 @@
-print(np.asarray(dict))
