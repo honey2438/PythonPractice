@@ -1,6 +1,6 @@
 import cv2
 
-cap=cv2.VideoCapture('vid.mp4')
+cap=cv2.VideoCapture(0)
 cap.set(3,400)
 cap.set(4,400)
 cap.set(10,100)

@@ -1,11 +1,11 @@
 import pandas as pd
-import numpy as np
+# import numpy as np
 import os
-os.chdir(f"D:\Python Practice\FirstProgram")
+# os.chdir(f"D:\Python Practice\FirstProgram")
 # l=[1,2,3,4]
 # print(pd.DataFrame(l))
 
-dict=pd.DataFrame({"s":pd.Series([1,2,3,4,5]),"a":pd.Series([1,2,3,4,5])})
+dict=pd.DataFrame({"s":pd.Series([1,2,3,None,5]),"a":pd.Series([1,2,3,None,5])})
 
 dict["c"]=dict["a"]+dict["s"]
 
@@ -35,12 +35,9 @@ dict.dropna(axis=0)#row
 dict.dropna(axis=1)#column
 dict.dropna(how="all")
 dict.dropna(subset=["a"])
-
-
-
-dict.fillna("a":1,"s":2)
 dict.fillna(method="ffill")
 dict.fillna(method="bfill")
+dict.fillna(0)
 
 
 
